@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
+    android:orientation="vertical"
     tools:context="id.dev.simpleui.MainActivity">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:src="@drawable/logo1"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:id="@+id/imgLogo"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imgLogo"
         android:text="Learning"
         android:textColor="@android:color/white"
         android:textSize="24sp"
@@ -25,20 +24,18 @@
         android:id="@+id/textBrand"
         android:layout_marginTop="16dp"/>
     <EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/textBrand"
-    android:id="@+id/ediTextUsername"
-    android:padding="8dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="8dp"
-    android:hint="Username"
-    android:background="@drawable/custom_background_edittext"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ediTextUsername"
+        android:padding="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Username"
+        android:background="@drawable/custom_background_edittext"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ediTextUsername"
         android:id="@+id/ediTextPss"
         android:padding="8dp"
         android:layout_marginLeft="16dp"
@@ -47,24 +44,28 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:background="@drawable/custom_background_edittext"/>
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="16dp"
-        android:layout_below="@+id/ediTextPss"
-        android:src="@drawable/captha"
-        android:id="@+id/imgCaptha"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/imgCaptha"
-        android:layout_below="@+id/ediTextPss"
-        android:padding="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/custom_background_edittext"
-        android:hint="Masukkan Capta"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="16dp"
+       android:orientation="horizontal">
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="50dp"
+           android:src="@drawable/captha"
+           android:layout_weight="1"
+           android:id="@+id/imgCaptha"/>
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="8dp"
+           android:layout_weight="8"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginTop="8dp"
+           android:background="@drawable/custom_background_edittext"
+           android:hint="Masukkan Capta"/>
+   </LinearLayout>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,7 +91,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Registrasi Akun baru?"
+        android:layout_marginTop="42dp"
         android:textColor="@android:color/white"
         android:background="@color/colorPrimaryDark"
         android:layout_alignParentBottom="true"/>
-</RelativeLayout>
+</LinearLayout>
