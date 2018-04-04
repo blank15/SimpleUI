@@ -5,26 +5,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="id.dev.simpleui.Home">
- <Button
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     style="@style/Widget.AppCompat.Button.Colored"
-     android:text="Dengan Relative Layout"
-     android:id="@+id/btnRelative"/>
+ <!--<Button-->
+     <!--android:layout_width="match_parent"-->
+     <!--android:layout_height="wrap_content"-->
+     <!--style="@style/Widget.AppCompat.Button.Colored"-->
+     <!--android:text="Dengan Relative Layout"-->
+     <!--android:id="@+id/btnRelative"/>-->
 
-    <Button
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/Widget.AppCompat.Button.Colored"-->
+        <!--android:text="Dengan Linear Layout"-->
+        <!--android:layout_below="@+id/btnRelative"-->
+        <!--android:id="@+id/btnLinear"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--style="@style/Widget.AppCompat.Button.Colored"-->
+        <!--android:text="Dengan Constrain Layout"-->
+        <!--android:layout_below="@+id/btnLinear"-->
+        <!--android:id="@+id/btnConstrain"/>-->
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:text="Dengan Linear Layout"
-        android:layout_below="@+id/btnRelative"
-        android:id="@+id/btnLinear"/>
-
-    <Button
+        android:text="Nama"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:id="@+id/textNamaTampil"/>
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:text="Dengan Constrain Layout"
-        android:layout_below="@+id/btnLinear"
-        android:id="@+id/btnConstrain"/>
+        android:text="Nim"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:layout_below="@+id/textNamaTampil"
+        android:id="@+id/textNimTampil"/>
 </RelativeLayout>

@@ -14,16 +14,18 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:id="@+id/imgLogo"/>
+
     <TextView
+        android:id="@+id/textBrand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/imgLogo"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
         android:text="Learning"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
-        android:gravity="center"
-        android:id="@+id/textBrand"
-        android:layout_marginTop="16dp"/>
+        android:textSize="24sp" />
     <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -47,28 +49,22 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:background="@drawable/custom_background_edittext"/>
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="16dp"
-        android:layout_below="@+id/ediTextPss"
-        android:src="@drawable/captha"
-        android:id="@+id/imgCaptha"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/imgCaptha"
+        android:id="@+id/textNim"
         android:layout_below="@+id/ediTextPss"
         android:padding="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/custom_background_edittext"
-        android:hint="Masukkan Capta"/>
+        android:hint="NIM"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imgCaptha"
+        android:layout_below="@+id/textNim"
         android:layout_marginTop="8dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"

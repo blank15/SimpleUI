@@ -68,7 +68,7 @@
     <ImageView
         android:id="@+id/imgCaptha"
         android:layout_width="100dp"
-        android:layout_height="20"
+        android:layout_height="20dp"
         android:layout_below="@+id/ediTextPss"
         android:layout_marginStart="37dp"
         android:layout_marginTop="8dp"
